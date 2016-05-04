@@ -54,14 +54,14 @@ public class Pathmove : MonoBehaviour {
 
 		}
 
-		if (Cam.transform.position.x>-13.6 &&Cam.transform.position.x<-13.2&&playflag==true) {
+		if (Cam.transform.position.x>-13.6 &&Cam.transform.position.x<-13.2&&playflag==true&&Time.timeScale==1) {
 			if (transform.localPosition.x > 0.1) {
 				player.AddRelativeForce (new Vector3 (0f, -1f, 0f));
 			}
 			speed =Mathf.Max((1+(Cam.transform.rotation.x + 0.35f) * 15f),0);
 			Vector3 move1 = transform.localPosition + new Vector3(0.1f,0f,0f) *(speed)*Time.deltaTime ;
 			transform.localPosition = move1;
-			test.text =test.text+ "Action with speed:"+speed.ToString();
+			test.text =test.text+ "Time:"+Time.time.ToString()+"  Action with speed:"+speed.ToString();
 			// Vector3 move2 = Player.transform.localPosition + new Vector3 (0f, 0f, -0.05f) * Cam.transform.rotation.y*2;
 			// Player.transform.localPosition = move2;
 			Vector3 move2 = new Vector3 (0f, 0f, -1f) * Cam.transform.rotation.y*2;
@@ -69,12 +69,17 @@ public class Pathmove : MonoBehaviour {
 			lastCamx = Cam.transform.rotation.x;
 			lastCamy = Cam.transform.rotation.y;
 
-			if (Player.transform.localPosition.y < -1 ||transform.localPosition.x>14.2) {
+			if (Player.transform.localPosition.y < -0.3 ||transform.localPosition.x>14.2) {
 				playflag = false;
 			}
 
+			if (Player.transform.localPosition.z < -3 ||Player.transform.localPosition.z < -3) {
+				Vector3 temp = Player.transform.localPosition + new Vector3 (0f, 0f, -Player.transform.localPosition.z);
+				Player.transform.localPosition = temp;
+			}
+
 			if (Cam.transform.position.x > -13.6 && Cam.transform.position.x < -13.2) {
-				test.text = "got here and playflag is:"+ playflag.ToString();
+				test.text = test.text+"playflag is:"+ playflag.ToString();
 			}
 			/*if (Player.transform.localPosition.y < 0.2) {
 			test.text = test.text + "got here";
