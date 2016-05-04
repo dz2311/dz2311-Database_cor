@@ -4,7 +4,7 @@ using UnityEngine.UI;
 public class realEasyModeControl : MonoBehaviour {
 	
 		public Canvas ExitWindow;
-
+		public Canvas CongratsWindow;
 
 		public bool exitpressed;
 		private GUIStyle guistyle=new GUIStyle();
@@ -21,6 +21,9 @@ public class realEasyModeControl : MonoBehaviour {
 			Application.LoadLevel (Application.loadedLevel);
 			Player.transform.localPosition = StartPosition;
 		}
+		public void NextLevel(){
+			Application.LoadLevel (3);
+		}
 		public void ExitAnyWay(){
 			Application.LoadLevel(0);
 		}
@@ -31,6 +34,8 @@ public class realEasyModeControl : MonoBehaviour {
 		// Use this for initialization
 		void Start () {
 			ExitWindow = ExitWindow.GetComponent<Canvas> ();
+		CongratsWindow = CongratsWindow.GetComponent<Canvas> ();
+		CongratsWindow.enabled = false;
 			ExitWindow.enabled = false;
 
 			exitpressed = false;
@@ -53,7 +58,6 @@ public class realEasyModeControl : MonoBehaviour {
 
 			if (exitpressed)
 				Time.timeScale = 0;
-
 			else
 				Time.timeScale= 1;
 		}

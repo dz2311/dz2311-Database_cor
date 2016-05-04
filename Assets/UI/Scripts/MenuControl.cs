@@ -7,6 +7,7 @@ public class MenuControl : MonoBehaviour {
 	public Canvas LevelMenu;
 	public Canvas TopScoresMenu;
 	public Canvas HelpMenu;
+	public Canvas InforMenu;
 	private static int xxx;
 	public Text TopScoreList;
 
@@ -21,6 +22,7 @@ public class MenuControl : MonoBehaviour {
 		TopScoresMenu.enabled = false;
 		LevelMenu.enabled = false;
 		MainMenu.enabled = true;
+		InforMenu.enabled = false;
 		TopScoreList.text = "Score: " + xxx.ToString();
 
 	}
@@ -32,6 +34,10 @@ public class MenuControl : MonoBehaviour {
 		LevelMenu.enabled = true;
 
 	}
+
+	public void InfoMode(){
+		InforMenu.enabled = true;
+	}
 	public void TopScoresMode(){
 		TopScoresMenu.enabled = true;
 	}
@@ -39,6 +45,7 @@ public class MenuControl : MonoBehaviour {
 		LevelMenu.enabled = false;
 		TopScoresMenu.enabled = false;
 		HelpMenu.enabled = false;
+		InforMenu.enabled = false;
 	}
 	public void PlayMode(){
 		Application.LoadLevel (2);
