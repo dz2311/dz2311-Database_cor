@@ -7,7 +7,7 @@ public class EasyModeControl : MonoBehaviour {
 
 	public Canvas EditorWindow;
 	public bool backtogame;
-
+	public Canvas CongratsWindow;
 	public bool exitpressed;
 	private GUIStyle guistyle=new GUIStyle();
 	private Text counterText;
@@ -19,7 +19,9 @@ public class EasyModeControl : MonoBehaviour {
 		EditorWindow.enabled = false;
 		backtogame = true;
 	}
-
+	public void Congrats(){
+		CongratsWindow.enabled = true;
+	} 
 	public void Exit(){
 		ExitWindow.enabled = true;
 		exitpressed = true;
@@ -39,7 +41,8 @@ public class EasyModeControl : MonoBehaviour {
 	void Start () {
 		ExitWindow = ExitWindow.GetComponent<Canvas> ();
 		ExitWindow.enabled = false;
-
+		CongratsWindow = CongratsWindow.GetComponent<Canvas> ();
+		CongratsWindow.enabled = false;
 		EditorWindow.enabled = true;
 		backtogame = false;
 

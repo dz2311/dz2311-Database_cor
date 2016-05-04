@@ -12,6 +12,10 @@ public class realEasyModeControl : MonoBehaviour {
 		private float seconds, minutes;
 		public GameObject Player;
 		public Vector3 StartPosition;
+		
+		public void Congrats(){
+			CongratsWindow.enabled = true;
+		} 
 
 		public void Exit(){
 			ExitWindow.enabled = true;

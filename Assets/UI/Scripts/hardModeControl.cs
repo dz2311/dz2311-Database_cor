@@ -6,7 +6,7 @@ public class hardModeControl : MonoBehaviour {
 
 		public Canvas ExitWindow;
 
-
+	public Canvas CongratsWindow;
 		public bool exitpressed;
 		private GUIStyle guistyle=new GUIStyle();
 		private Text counterText;
@@ -18,6 +18,9 @@ public class hardModeControl : MonoBehaviour {
 			ExitWindow.enabled = true;
 			exitpressed = true;
 		}
+	public void Congrats(){
+		CongratsWindow.enabled = true;
+	} 
 		public void Restart(){
 			Application.LoadLevel (Application.loadedLevel);
 			Player.transform.localPosition = StartPosition;
@@ -33,7 +36,8 @@ public class hardModeControl : MonoBehaviour {
 		void Start () {
 			ExitWindow = ExitWindow.GetComponent<Canvas> ();
 			ExitWindow.enabled = false;
-
+		CongratsWindow = CongratsWindow.GetComponent<Canvas> ();
+		CongratsWindow.enabled = false;
 			exitpressed = false;
 			counterText = GetComponent<Text> () as Text;
 			Player = GameObject.Find ("Player");
