@@ -1,0 +1,72 @@
+/Users/lindashen/Desktop/Columbia University/2016 Spring/Computer Science/3D UI and Augmented Reality/Final Project/Super-Bowling-master/Temp/bin/Debug/UnityEngine.dll
+/Users/lindashen/Desktop/Columbia University/2016 Spring/Computer Science/3D UI and Augmented Reality/Final Project/Super-Bowling-master/Temp/bin/Debug/UnityEditor.dll
+/Users/lindashen/Desktop/Columbia University/2016 Spring/Computer Science/3D UI and Augmented Reality/Final Project/Super-Bowling-master/Temp/bin/Debug/UnityEngine.UI.dll
+/Users/lindashen/Desktop/Columbia University/2016 Spring/Computer Science/3D UI and Augmented Reality/Final Project/Super-Bowling-master/Temp/bin/Debug/UnityEngine.Networking.dll
+/Users/lindashen/Desktop/Columbia University/2016 Spring/Computer Science/3D UI and Augmented Reality/Final Project/Super-Bowling-master/Temp/bin/Debug/Vuforia.UnityExtensions.dll
+/Users/lindashen/Desktop/Columbia University/2016 Spring/Computer Science/3D UI and Augmented Reality/Final Project/Super-Bowling-master/Temp/bin/Debug/Mono.Cecil.dll
+/Users/lindashen/Desktop/Columbia University/2016 Spring/Computer Science/3D UI and Augmented Reality/Final Project/Super-Bowling-master/Temp/bin/Debug/Unity.SerializationLogic.dll
+/Users/lindashen/Desktop/Columbia University/2016 Spring/Computer Science/3D UI and Augmented Reality/Final Project/Super-Bowling-master/Temp/bin/Debug/Unity.DataContract.dll
+/Users/lindashen/Desktop/Columbia University/2016 Spring/Computer Science/3D UI and Augmented Reality/Final Project/Super-Bowling-master/Temp/bin/Debug/ICSharpCode.NRefactory.dll
+/Users/lindashen/Desktop/Columbia University/2016 Spring/Computer Science/3D UI and Augmented Reality/Final Project/Super-Bowling-master/Temp/bin/Debug/Unity.UNetWeaver.dll
+/Users/lindashen/Desktop/Columbia University/2016 Spring/Computer Science/3D UI and Augmented Reality/Final Project/Super-Bowling-master/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
+/Users/lindashen/Desktop/Columbia University/2016 Spring/Computer Science/3D UI and Augmented Reality/Final Project/Super-Bowling-master/Temp/bin/Debug/Unity.CecilTools.dll
+/Users/lindashen/Desktop/Columbia University/2016 Spring/Computer Science/3D UI and Augmented Reality/Final Project/Super-Bowling-master/Temp/bin/Debug/Mono.Cecil.Pdb.dll
+/Users/lindashen/Desktop/Columbia University/2016 Spring/Computer Science/3D UI and Augmented Reality/Final Project/Super-Bowling-master/Temp/bin/Debug/Mono.Cecil.Mdb.dll
+/Users/lindashen/Desktop/Columbia University/2016 Spring/Computer Science/3D UI and Augmented Reality/Final Project/Super-Bowling-master/Temp/bin/Debug/Assembly-CSharp.dll.mdb
+/Users/lindashen/Desktop/Columbia University/2016 Spring/Computer Science/3D UI and Augmented Reality/Final Project/Super-Bowling-master/Temp/bin/Debug/Assembly-CSharp.dll
+/Users/lindashen/Desktop/Columbia University/2016 Spring/Computer Science/3D UI and Augmented Reality/Final Project/Super-Bowling-master/obj/Debug/Assembly-CSharp.dll
+/Users/lindashen/Desktop/Columbia University/2016 Spring/Computer Science/3D UI and Augmented Reality/Final Project/Super-Bowling-master/obj/Debug/Assembly-CSharp.dll.mdb
+/Users/dizhu/Downloads/Super-Bowling-UI/obj/Debug/Assembly-CSharp.dll
+/Users/dizhu/Downloads/Super-Bowling-UI/obj/Debug/Assembly-CSharp.dll.mdb
+/Users/dizhu/Downloads/Super-Bowling-UI/Temp/bin/Debug/UnityEngine.dll
+/Users/dizhu/Downloads/Super-Bowling-UI/Temp/bin/Debug/UnityEditor.dll
+/Users/dizhu/Downloads/Super-Bowling-UI/Temp/bin/Debug/UnityEngine.Networking.dll
+/Users/dizhu/Downloads/Super-Bowling-UI/Temp/bin/Debug/UnityEngine.UI.dll
+/Users/dizhu/Downloads/Super-Bowling-UI/Temp/bin/Debug/Vuforia.UnityExtensions.dll
+/Users/dizhu/Downloads/Super-Bowling-UI/Temp/bin/Debug/Mono.Cecil.dll
+/Users/dizhu/Downloads/Super-Bowling-UI/Temp/bin/Debug/Unity.SerializationLogic.dll
+/Users/dizhu/Downloads/Super-Bowling-UI/Temp/bin/Debug/Unity.DataContract.dll
+/Users/dizhu/Downloads/Super-Bowling-UI/Temp/bin/Debug/ICSharpCode.NRefactory.dll
+/Users/dizhu/Downloads/Super-Bowling-UI/Temp/bin/Debug/Unity.UNetWeaver.dll
+/Users/dizhu/Downloads/Super-Bowling-UI/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
+/Users/dizhu/Downloads/Super-Bowling-UI/Temp/bin/Debug/Unity.CecilTools.dll
+/Users/dizhu/Downloads/Super-Bowling-UI/Temp/bin/Debug/Mono.Cecil.Pdb.dll
+/Users/dizhu/Downloads/Super-Bowling-UI/Temp/bin/Debug/Mono.Cecil.Mdb.dll
+/Users/dizhu/Downloads/Super-Bowling-UI/Temp/bin/Debug/Assembly-CSharp.dll.mdb
+/Users/dizhu/Downloads/Super-Bowling-UI/Temp/bin/Debug/Assembly-CSharp.dll
+/Users/lindashen/Super-Bowling-UI/Temp/bin/Debug/Assembly-CSharp.dll.mdb
+/Users/lindashen/Super-Bowling-UI/Temp/bin/Debug/Assembly-CSharp.dll
+/Users/lindashen/Super-Bowling-UI/obj/Debug/Assembly-CSharp.dll
+/Users/lindashen/Super-Bowling-UI/obj/Debug/Assembly-CSharp.dll.mdb
+/Users/lindashen/Super-Bowling-UI/Temp/bin/Debug/UnityEngine.dll
+/Users/lindashen/Super-Bowling-UI/Temp/bin/Debug/UnityEditor.dll
+/Users/lindashen/Super-Bowling-UI/Temp/bin/Debug/UnityEngine.UI.dll
+/Users/lindashen/Super-Bowling-UI/Temp/bin/Debug/UnityEngine.Networking.dll
+/Users/lindashen/Super-Bowling-UI/Temp/bin/Debug/Vuforia.UnityExtensions.dll
+/Users/lindashen/Super-Bowling-UI/Temp/bin/Debug/Mono.Cecil.dll
+/Users/lindashen/Super-Bowling-UI/Temp/bin/Debug/Unity.SerializationLogic.dll
+/Users/lindashen/Super-Bowling-UI/Temp/bin/Debug/Unity.DataContract.dll
+/Users/lindashen/Super-Bowling-UI/Temp/bin/Debug/ICSharpCode.NRefactory.dll
+/Users/lindashen/Super-Bowling-UI/Temp/bin/Debug/Unity.UNetWeaver.dll
+/Users/lindashen/Super-Bowling-UI/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
+/Users/lindashen/Super-Bowling-UI/Temp/bin/Debug/Unity.CecilTools.dll
+/Users/lindashen/Super-Bowling-UI/Temp/bin/Debug/Mono.Cecil.Pdb.dll
+/Users/lindashen/Super-Bowling-UI/Temp/bin/Debug/Mono.Cecil.Mdb.dll
+/Users/lindashen/Downloads/Super-Bowling-UI-master/Temp/bin/Debug/Assembly-CSharp.dll.mdb
+/Users/lindashen/Downloads/Super-Bowling-UI-master/Temp/bin/Debug/Assembly-CSharp.dll
+/Users/lindashen/Downloads/Super-Bowling-UI-master/obj/Debug/Assembly-CSharp.dll
+/Users/lindashen/Downloads/Super-Bowling-UI-master/obj/Debug/Assembly-CSharp.dll.mdb
+/Users/lindashen/Downloads/Super-Bowling-UI-master/Temp/bin/Debug/UnityEngine.dll
+/Users/lindashen/Downloads/Super-Bowling-UI-master/Temp/bin/Debug/UnityEditor.dll
+/Users/lindashen/Downloads/Super-Bowling-UI-master/Temp/bin/Debug/UnityEngine.UI.dll
+/Users/lindashen/Downloads/Super-Bowling-UI-master/Temp/bin/Debug/UnityEngine.Networking.dll
+/Users/lindashen/Downloads/Super-Bowling-UI-master/Temp/bin/Debug/Vuforia.UnityExtensions.dll
+/Users/lindashen/Downloads/Super-Bowling-UI-master/Temp/bin/Debug/Mono.Cecil.dll
+/Users/lindashen/Downloads/Super-Bowling-UI-master/Temp/bin/Debug/Unity.SerializationLogic.dll
+/Users/lindashen/Downloads/Super-Bowling-UI-master/Temp/bin/Debug/Unity.DataContract.dll
+/Users/lindashen/Downloads/Super-Bowling-UI-master/Temp/bin/Debug/ICSharpCode.NRefactory.dll
+/Users/lindashen/Downloads/Super-Bowling-UI-master/Temp/bin/Debug/Unity.UNetWeaver.dll
+/Users/lindashen/Downloads/Super-Bowling-UI-master/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
+/Users/lindashen/Downloads/Super-Bowling-UI-master/Temp/bin/Debug/Unity.CecilTools.dll
+/Users/lindashen/Downloads/Super-Bowling-UI-master/Temp/bin/Debug/Mono.Cecil.Pdb.dll
+/Users/lindashen/Downloads/Super-Bowling-UI-master/Temp/bin/Debug/Mono.Cecil.Mdb.dll
