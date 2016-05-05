@@ -55,6 +55,7 @@
      <Compile Include="Assets\Scripts\Obstacle.cs" />
      <Compile Include="Assets\Scripts\Pathmove.cs" />
      <Compile Include="Assets\Scripts\PlayerCollisionControl.cs" />
+     <Compile Include="Assets\Scripts\RotatingObstacle.cs" />
      <Compile Include="Assets\Scripts\vbjump.cs" />
      <Compile Include="Assets\UI\Scripts\EasyModeControl.cs" />
      <Compile Include="Assets\UI\Scripts\MenuControl.cs" />
