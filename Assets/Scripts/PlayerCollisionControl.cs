@@ -82,7 +82,7 @@ public class PlayerCollisionControl : MonoBehaviour {
 			float vol = Random.Range (volLowRange, volHighRange);
 			source.PlayOneShot (shootSound, vol);
 
-			scoreText.text = "Score: " + count.ToString ()+"; Level: "+levelname;
+			scoreText.text = "Score: " + count.ToString ()+"   Level: "+levelname;
 			if (count == 100) {
 				int x;
 				x = Application.loadedLevel;

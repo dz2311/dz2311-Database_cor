@@ -74,7 +74,7 @@ public class MenuControl : MonoBehaviour {
 		//xxx = trs;
 		//xxx=0;
 		//PlayerPrefs.GetInt("Player Score", )
-		TopScoreList.text = "BuildMode: " + trs_build.ToString()+"\nEasyMode: " + trs_easy.ToString()+"\nHardmode: " + trs_hard.ToString();
+		TopScoreList.text = "EasyMode: " + trs_easy.ToString()+ "\nHardmode: " + trs_hard.ToString() + "\nBuildMode: " + trs_build.ToString();
 		//TopScoreList.text = "Score: " + trs.ToString();
 	}
 }
