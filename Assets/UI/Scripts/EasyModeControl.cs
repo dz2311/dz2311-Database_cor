@@ -15,9 +15,14 @@ public class EasyModeControl : MonoBehaviour {
 	public GameObject Player;
 	public Vector3 StartPosition;
 
+    public float frames = 0;
+    public GameObject editorWorkspace;
+    private Quaternion StartRotation;
+
 	public void Backtogame(){
-		EditorWindow.enabled = false;
+		//EditorWindow.enabled = false;
 		backtogame = true;
+        exitpressed = false;
 	}
 	public void Congrats(){
 		CongratsWindow.enabled = true;
@@ -27,8 +32,21 @@ public class EasyModeControl : MonoBehaviour {
 		exitpressed = true;
 	}
 	public void Restart(){
-		Application.LoadLevel (Application.loadedLevel);
-		Player.transform.localPosition = StartPosition;
+		//Application.LoadLevel (Application.loadedLevel);
+        frames = 0;
+        editorWorkspace.transform.localPosition = new Vector3(0, 0.007f, 0);
+        editorWorkspace.GetComponent<Pathmove>().playflag = true;
+        Player.transform.localPosition = StartPosition;
+        Player.transform.localRotation = StartRotation;
+        GameObject pins = GameObject.Find("BowlingPins");
+        foreach (Transform p in pins.transform)
+        {
+            p.gameObject.SetActive(true);
+        }
+        Player.GetComponent<PlayerCollisionControl>().SetCount(0);
+
+        ExitWindow.enabled = false;
+        exitpressed = false;
 	}
 	public void ExitAnyWay(){
 		Application.LoadLevel(0);
@@ -41,6 +59,9 @@ public class EasyModeControl : MonoBehaviour {
 	void Start () {
 		ExitWindow = ExitWindow.GetComponent<Canvas> ();
 		ExitWindow.enabled = false;
+
+        editorWorkspace = GameObject.Find("EditorWorkspace");
+
 		CongratsWindow = CongratsWindow.GetComponent<Canvas> ();
 		CongratsWindow.enabled = false;
 		EditorWindow.enabled = true;
@@ -50,11 +71,14 @@ public class EasyModeControl : MonoBehaviour {
 		counterText = GetComponent<Text> () as Text;
 		Player = GameObject.Find ("Player");
 		StartPosition = Player.transform.localPosition;
+        StartRotation = Player.transform.localRotation;
 
 	}
 	void OnGUI(){
-		minutes = (int)(Time.timeSinceLevelLoad / 60f);
-		seconds = (int)(Time.timeSinceLevelLoad % 60f);
+        frames += Time.deltaTime;
+        minutes = Mathf.Floor(frames / 60);//(int)(Time.timeSinceLevelLoad / 60f);
+        seconds = Mathf.RoundToInt(frames % 60);//(int)
+
 		guistyle.fontSize = 50;
 
 		guistyle.normal.textColor = Color.green;
