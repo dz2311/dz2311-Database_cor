@@ -66,11 +66,15 @@ public class MenuControl : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		int trs=PlayerCollisionControl.overalscore;
+		int trs_build=PlayerCollisionControl.overalscore_build;
+		int trs_easy=PlayerCollisionControl.overalscore_easy;
+		int trs_hard=PlayerCollisionControl.overalscore_hard;
+
 		//trs = Mathf.Max (trs, xxx);
 		//xxx = trs;
 		//xxx=0;
 		//PlayerPrefs.GetInt("Player Score", )
-		TopScoreList.text = "Score: " + trs.ToString();
+		TopScoreList.text = "BuildMode: " + trs_build.ToString()+"\nEasyMode: " + trs_easy.ToString()+"\nHardmode: " + trs_hard.ToString();
+		//TopScoreList.text = "Score: " + trs.ToString();
 	}
 }
