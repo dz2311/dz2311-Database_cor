@@ -39,17 +39,19 @@ public class Pathmove : MonoBehaviour {
 		test.text = "";
 
 		if (!playflag) {
-			int x;
-			x = Application.loadedLevel;
-			if (x == 1) {
-				EasyModeControl link = Cam.GetComponent<EasyModeControl> ();
-				link.Exit ();
-			} else if (x == 2) {
-				realEasyModeControl link_ = Cam.GetComponent<realEasyModeControl> ();
-				link_.Exit ();
-			} else if (x == 3) {
-				hardModeControl link__=Cam.GetComponent<hardModeControl> ();
-				link__.Exit();
+			if (GameObject.Find ("Player").GetComponent<PlayerCollisionControl> ().count !=100) {
+				int x;
+				x = Application.loadedLevel;
+				if (x == 1) {
+					EasyModeControl link = Cam.GetComponent<EasyModeControl> ();
+					link.Exit ();
+				} else if (x == 2) {
+					realEasyModeControl link_ = Cam.GetComponent<realEasyModeControl> ();
+					link_.Exit ();
+				} else if (x == 3) {
+					hardModeControl link__ = Cam.GetComponent<hardModeControl> ();
+					link__.Exit ();
+				}
 			}
 
 		}

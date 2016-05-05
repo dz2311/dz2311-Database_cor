@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine.UI;
 public class PlayerCollisionControl : MonoBehaviour {
 	private Rigidbody rb;
-	private int count;
+	public int count;
 	public GameObject Cam;
 	public AudioClip shootSound;
 	private AudioSource source;
