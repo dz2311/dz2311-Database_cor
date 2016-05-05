@@ -73,5 +73,7 @@ public class EasyModeControl : MonoBehaviour {
 			Time.timeScale = 0;
 		else
 			Time.timeScale= 1;
+		if (GameObject.Find ("Player").GetComponent<PlayerCollisionControl> ().count == 100)
+			Time.timeScale = 0;
 	}
 }
