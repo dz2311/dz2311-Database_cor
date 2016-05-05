@@ -1,16 +1,23 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 public class PlayerCollisionControl : MonoBehaviour {
 	private Rigidbody rb;
 	private int count;
 	public GameObject Cam;
 	public AudioClip shootSound;
 	private AudioSource source;
+	private int level;
 	private float volLowRange=5.5f;
 	private float volHighRange=10.0f;
+	private string levelname;
 
-	public static int overalscore;
+	public static int overalscore_easy;
+	public static int overalscore_hard;
+	public static int overalscore_build;
+
 
 	public Text scoreText;
 	// Use this for initialization
@@ -28,7 +35,19 @@ public class PlayerCollisionControl : MonoBehaviour {
 		//overalscore = 0;
 		count = 0;
 		rb = GetComponent<Rigidbody> ();
-		scoreText.text = "Score: " + count.ToString ();
+		level = SceneManager.GetActiveScene ().buildIndex;
+		switch (level) {
+		case 1:
+			levelname = "BuildMode";
+			break;
+		case 2:
+			levelname = "Easy";
+			break;
+		case 3:
+			levelname = "Hard";
+			break;
+		}
+		scoreText.text = "Score: " + count.ToString ()+"; Level: "+levelname;
 		Cam= GameObject.Find("ARCamera");
 	}
 	
@@ -36,8 +55,22 @@ public class PlayerCollisionControl : MonoBehaviour {
 	void Update () {
 		//overalscore = count;
 		if (!GameObject.Find ("EditorWorkspace").GetComponent<Pathmove> ().playflag) {
-			if (overalscore < count)
-				overalscore = count;
+			switch (level) {
+			case 1:
+				if (overalscore_build < count)
+					overalscore_build = count;
+				break;
+			case 2:
+				if (overalscore_easy < count)
+					overalscore_easy = count;
+				break;
+			case 3:
+				if (overalscore_hard < count)
+					overalscore_hard = count;
+				break;
+			}
+			//			if (overalscore < count)
+			//				overalscore = count;
 		}
 		//Debug.Log (count);
 	}
@@ -49,7 +82,7 @@ public class PlayerCollisionControl : MonoBehaviour {
 			float vol = Random.Range (volLowRange, volHighRange);
 			source.PlayOneShot (shootSound, vol);
 
-			scoreText.text = "Score: " + count.ToString ();
+			scoreText.text = "Score: " + count.ToString ()+"; Level: "+levelname;
 			if (count == 100) {
 				int x;
 				x = Application.loadedLevel;
